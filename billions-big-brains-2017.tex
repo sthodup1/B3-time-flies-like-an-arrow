@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}     
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{url}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{$B^3$: Billions for Big Brains}
+\date{}
+\begin{document}
+\vspace{-0.5cm}
+\maketitle
+\vspace{-2cm}
+\begin{center}
+Design a large scale proposal for understanding brain connectivity
+\end{center}
+
+
+\section{Request for Proposal}
+Neuroscience is in a golden age of data and computation. With data acquisition systems being developed across
+a broad range of scales, computational frameworks enabling scalable analysis unlike ever before, and growing
+statistical and biological models enabling more realistic simulation of living organisms than we've seen to date.
+We, Grelliam Corp., are formally issuing a request for proposals (RFP) in which we will fund a single group in the
+amount of \$ 10~billion to uncover a mystery about the brain. Proposals responding to this RFP shall address a
+challenge of the authors' choosing, spending up-to but not exceeding the available \$ 10~billion fund. Evaluation
+will be based upon the considerations enumerated below, in Section~\ref{sec:eval}. Each team, along with the
+submission of a proposal, will give a presentation to the review board which will highlight the key points of
+their proposal.
+
+\section{Background}
+This project is inspired by a course entitled \textit{3YP} taught by Frank Wood at The University of Oxford.
+The link to Frank's course is here: \url{http://www.robots.ox.ac.uk/~fwood/teaching/3YP_2016/}. On Frank's
+website there exists a large number of resources, links, papers, and other tools that may be helpful in this
+design process. It is important to note that the goal of the projects is different, so though you may benefit
+from some of the resources contained within his site the objective, topic, and evaluation criterion stated
+in this document should be followed in any discrepancy.
+
+\section{Evaluation}
+\label{sec:eval}
+The proposals shall address several key considerations, enumerated and valued below.
+\begin{itemize}[noitemsep]
+\item \textbf{scientific question} (20 points) Each team must propose a scientific question that is of interest to solving
+an important neuroscience challenge relevant to human health, computation, or technology,
+\item \textbf{hardware + facilities} (10 points) What type of scanning/imaging equipment will be used to acquire images
+of the brain is imperative. The scale of data collection may be up to the proposing team, and different modalities
+may have significant advantages for specific scientific questions. Points will be awarded for describing the data
+collection procedure in adequate detail such that the reviewers understand the efficacy of the chosen method in answering
+the proposed question.
+\item \textbf{data collection processes} (10 points) In addition to specifying the modality and necessary equipment to acquire
+the images, considerations must be made to for how to get the images from the acquisition hardware into a format that enables
+processing.
+\item \textbf{information extraction processes} (20 points) Once data is acquired it must be processed and analyzed such that
+the proposed scientific question can begin to be answered. This includes image processing such as registration, segmentation,
+annotation, graph extraction, as a start. Additionally, once the given derivatives have been extracted, statistical analyses
+must be performed to verify the findings and provide an indication of the significance of their strength. 
+\item \textbf{data upload} (10 points) All raw and processed data, as well as their summary figures, must be uploaded to a
+publicly available resource which enables other researchers and members of society to benefit from their existence.
+\item \textbf{data storage} (10 points) Data storage must be considered for larger volumes, both in the short term when data
+is collected from a microscrope and the longer term when it is being shared publicly for an indefinite period of time.
+\item \textbf{cost} (20 points) A cost breakdown will summarize the expense of this proposal in as great detail as is possible.
+Additional points will not be awarded if a team submits a project below budget (i.e. if the money is not spent it is considered
+lost).
+\item \textbf{feasibility} (50 points) This proposal must be feasible in the eyes of the review board, based on the details
+contained within. Providing sufficient detail in order for this review to be possible is essential, as unanswered questions by
+the reviewers will be considered holes in the feasibility of the proposal.
+\item \textbf{total} (150 points)
+\end{itemize}
+
+\section{Submission Requirements}
+\begin{itemize}[noitemsep]
+	\item 3-5 page description of proposal in detail written in \LaTeX, thus in PDF format
+	\item 3 slide presentation summarizing the proposal in PDF format
+	\item 5-minute elevator pitch of the aforementioned slides.
+\end{itemize}
+ 
+\section{Submission Deadline}
+The proposals must be submitted to Grelliam Corp. via a link to a Github repository by no later than 14h45 on Monday,
+January 16th, 2017.
+
+\end{document}  
